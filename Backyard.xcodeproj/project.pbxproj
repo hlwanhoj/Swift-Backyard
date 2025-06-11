@@ -17,6 +17,7 @@
 				BackyardApp.swift,
 				Pages/Catalog/CatalogItem.swift,
 				Pages/Catalog/CatalogView.swift,
+				"Pages/OS/Installed Fonts/InstalledFontsView.swift",
 			);
 			target = EEFE9E082DF9C6C900BC206C /* Backyard */;
 		};

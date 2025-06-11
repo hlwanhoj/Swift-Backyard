@@ -28,7 +28,10 @@ struct CatalogView: View {
                 }
             }
             .navigationDestination(for: CatalogItemAction.self) { action in
-                Text("Action: \(action)")
+                switch action {
+                case .goToInstalledFontsPage:
+                    InstalledFontsView()
+                }
             }
             .navigationTitle("Catalog")
         }
