@@ -12,6 +12,9 @@ struct CatalogView: View {
         CatalogSection(name: "OS", children: [
             CatalogItem(name: "Installed Fonts", action: .goToInstalledFontsPage),
         ]),
+        CatalogSection(name: "UICollectionViewLayout", children: [
+            CatalogItem(name: "Custom Layout 1", action: .goToCustomLayout01Page),
+        ]),
     ]
     
     var body: some View {
@@ -31,6 +34,8 @@ struct CatalogView: View {
                 switch action {
                 case .goToInstalledFontsPage:
                     InstalledFontsView()
+                case .goToCustomLayout01Page:
+                    CustomLayout01View()
                 }
             }
             .navigationTitle("Catalog")

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EE3353AA2DFB1B3300D2BA3B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EE3353A92DFB1B3300D2BA3B /* Then */; };
+		EE3353AC2DFB1B3600D2BA3B /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = EE3353AB2DFB1B3600D2BA3B /* TinyConstraints */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EEFE9E092DF9C6C900BC206C /* Backyard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Backyard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -18,7 +23,15 @@
 				Pages/Catalog/CatalogItem.swift,
 				Pages/Catalog/CatalogView.swift,
 				"Pages/OS/Installed Fonts/InstalledFontsView.swift",
+				"Pages/UICollectionViewLayout/Custom Layout 1/CL01.swift",
+				"Pages/UICollectionViewLayout/Custom Layout 1/CL01Attributes.swift",
+				"Pages/UICollectionViewLayout/Custom Layout 1/CL01CategoryItem.swift",
+				"Pages/UICollectionViewLayout/Custom Layout 1/CL01Cell.swift",
+				"Pages/UICollectionViewLayout/Custom Layout 1/CL01ViewController.swift",
+				"Pages/UICollectionViewLayout/Custom Layout 1/CustomLayout01View.swift",
 				Util/AlertToastModifier.swift,
+				Util/CGRectExt.swift,
+				Util/CollectionExt.swift,
 			);
 			target = EEFE9E082DF9C6C900BC206C /* Backyard */;
 		};
@@ -40,16 +53,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3353AA2DFB1B3300D2BA3B /* Then in Frameworks */,
+				EE3353AC2DFB1B3600D2BA3B /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE3353A82DFB1B3300D2BA3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EEFE9DB82DF2113D00BC206C = {
 			isa = PBXGroup;
 			children = (
 				EEFE9DC32DF2113D00BC206C /* Backyard */,
+				EE3353A82DFB1B3300D2BA3B /* Frameworks */,
 				EEFE9DC22DF2113D00BC206C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +102,8 @@
 			);
 			name = Backyard;
 			packageProductDependencies = (
+				EE3353A92DFB1B3300D2BA3B /* Then */,
+				EE3353AB2DFB1B3600D2BA3B /* TinyConstraints */,
 			);
 			productName = Backyard;
 			productReference = EEFE9E092DF9C6C900BC206C /* Backyard.app */;
@@ -361,6 +386,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE3353A92DFB1B3300D2BA3B /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEFE9DDB2DF2DF3F00BC206C /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		EE3353AB2DFB1B3600D2BA3B /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEFE9DDE2DF2DF4700BC206C /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEFE9DB92DF2113D00BC206C /* Project object */;
 }

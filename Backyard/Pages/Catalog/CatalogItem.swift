@@ -9,6 +9,7 @@ import Foundation
 
 enum CatalogItemAction {
     case goToInstalledFontsPage
+    case goToCustomLayout01Page
 }
 
 struct CatalogSection: Identifiable {
