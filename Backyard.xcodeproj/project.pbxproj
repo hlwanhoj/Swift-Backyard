@@ -22,16 +22,19 @@
 				BackyardApp.swift,
 				Pages/Catalog/CatalogItem.swift,
 				Pages/Catalog/CatalogView.swift,
-				"Pages/OS/Installed Fonts/InstalledFontsView.swift",
+				Pages/System/SystemInstalledFontsView.swift,
+				Pages/System/SystemTextStylesView.swift,
 				"Pages/UICollectionViewLayout/Custom Layout 1/CL01.swift",
 				"Pages/UICollectionViewLayout/Custom Layout 1/CL01Attributes.swift",
 				"Pages/UICollectionViewLayout/Custom Layout 1/CL01CategoryItem.swift",
 				"Pages/UICollectionViewLayout/Custom Layout 1/CL01Cell.swift",
 				"Pages/UICollectionViewLayout/Custom Layout 1/CL01ViewController.swift",
 				"Pages/UICollectionViewLayout/Custom Layout 1/CustomLayout01View.swift",
-				Util/AlertToastModifier.swift,
+				TestView.swift,
 				Util/CGRectExt.swift,
 				Util/CollectionExt.swift,
+				Util/Modifiers/AlertToastModifier.swift,
+				Util/Theme.swift,
 			);
 			target = EEFE9E082DF9C6C900BC206C /* Backyard */;
 		};

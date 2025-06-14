@@ -1,5 +1,5 @@
 //
-//  InstalledFontsView.swift
+//  SystemInstalledFontsView.swift
 //  Backyard
 //
 //  Created by Ho Lun Wan on 12/6/2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct InstalledFontsView: View {
+struct SystemInstalledFontsView: View {
     @State private var searchText = ""
     @State private var showsTextCopiedToast = false
     private let fontFamilies = UIFont.familyNames.sorted()
@@ -36,7 +36,7 @@ struct InstalledFontsView: View {
                                 showsTextCopiedToast = true
                             }) {
                                 Text(fontName)
-                                    .font(.custom(fontName, size: 14))
+                                    .font(.custom(fontName, size: 18))
                                     .foregroundColor(.primary)
                             }
                         }
@@ -63,6 +63,6 @@ struct InstalledFontsView: View {
 
 #Preview {
     NavigationStack {
-        InstalledFontsView()
+        SystemInstalledFontsView()
     }
 }

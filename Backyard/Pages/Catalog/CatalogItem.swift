@@ -8,7 +8,8 @@
 import Foundation
 
 enum CatalogItemAction {
-    case goToInstalledFontsPage
+    case goToSystemInstalledFontsPage
+    case goToSystemTextStylesPage
     case goToCustomLayout01Page
 }
 

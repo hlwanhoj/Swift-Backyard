@@ -9,8 +9,9 @@ import SwiftUI
 
 struct CatalogView: View {
     private let sections: [CatalogSection] = [
-        CatalogSection(name: "OS", children: [
-            CatalogItem(name: "Installed Fonts", action: .goToInstalledFontsPage),
+        CatalogSection(name: "System", children: [
+            CatalogItem(name: "Installed Fonts", action: .goToSystemInstalledFontsPage),
+            CatalogItem(name: "Text Styles", action: .goToSystemTextStylesPage),
         ]),
         CatalogSection(name: "UICollectionViewLayout", children: [
             CatalogItem(name: "Custom Layout 1", action: .goToCustomLayout01Page),
@@ -32,8 +33,10 @@ struct CatalogView: View {
             }
             .navigationDestination(for: CatalogItemAction.self) { action in
                 switch action {
-                case .goToInstalledFontsPage:
-                    InstalledFontsView()
+                case .goToSystemInstalledFontsPage:
+                    SystemInstalledFontsView()
+                case .goToSystemTextStylesPage:
+                    SystemTextStylesView()
                 case .goToCustomLayout01Page:
                     CustomLayout01View()
                 }
