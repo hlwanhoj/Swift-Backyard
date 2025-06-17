@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct BackyardApp: App {
+    init() {
+        Theme.current.setupNavigationBarAppearance()
+    }
+    
     var body: some Scene {
         WindowGroup {
             CatalogView()

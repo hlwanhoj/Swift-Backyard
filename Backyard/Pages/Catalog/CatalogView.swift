@@ -17,15 +17,15 @@ struct CatalogView: View {
             CatalogItem(name: "Custom Layout 1", action: .goToCustomLayout01Page),
         ]),
     ]
-    
+
     var body: some View {
         NavigationStack {
             List {
                 ForEach(sections) { section in
-                    Section(header: Text(section.name)) {
+                    Section(header: Text(section.name).themeFont(.subheadline)) {
                         ForEach(section.children) { item in
                             NavigationLink(value: item.action) {
-                                Text(item.name)
+                                Text(item.name).themeFont(.body)
                             }
                         }
                     }

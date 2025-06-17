@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EE3353AA2DFB1B3300D2BA3B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EE3353A92DFB1B3300D2BA3B /* Then */; };
 		EE3353AC2DFB1B3600D2BA3B /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = EE3353AB2DFB1B3600D2BA3B /* TinyConstraints */; };
+		EE3353D52E01A41100D2BA3B /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = EE3353D42E01A41100D2BA3B /* SwiftUIIntrospect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3353D52E01A41100D2BA3B /* SwiftUIIntrospect in Frameworks */,
 				EE3353AA2DFB1B3300D2BA3B /* Then in Frameworks */,
 				EE3353AC2DFB1B3600D2BA3B /* TinyConstraints in Frameworks */,
 			);
@@ -107,6 +109,7 @@
 			packageProductDependencies = (
 				EE3353A92DFB1B3300D2BA3B /* Then */,
 				EE3353AB2DFB1B3600D2BA3B /* TinyConstraints */,
+				EE3353D42E01A41100D2BA3B /* SwiftUIIntrospect */,
 			);
 			productName = Backyard;
 			productReference = EEFE9E092DF9C6C900BC206C /* Backyard.app */;
@@ -139,6 +142,7 @@
 			packageReferences = (
 				EEFE9DDB2DF2DF3F00BC206C /* XCRemoteSwiftPackageReference "Then" */,
 				EEFE9DDE2DF2DF4700BC206C /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+				EE3353D32E01A41100D2BA3B /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EEFE9DC22DF2113D00BC206C /* Products */;
@@ -372,6 +376,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EE3353D32E01A41100D2BA3B /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 		EEFE9DDB2DF2DF3F00BC206C /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -400,6 +412,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EEFE9DDE2DF2DF4700BC206C /* XCRemoteSwiftPackageReference "TinyConstraints" */;
 			productName = TinyConstraints;
+		};
+		EE3353D42E01A41100D2BA3B /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3353D32E01A41100D2BA3B /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIIntrospect
 
 struct SystemInstalledFontsView: View {
     @State private var searchText = ""
@@ -29,7 +30,7 @@ struct SystemInstalledFontsView: View {
                     .filter { searchText.isEmpty || $0.localizedCaseInsensitiveContains(searchText) }
                     .sorted()
                 if !filteredFontNames.isEmpty {
-                    Section(header: Text(fontFamily)) {
+                    Section(header: Text(fontFamily).themeFont(.subheadline)) {
                         ForEach(UIFont.fontNames(forFamilyName: fontFamily).sorted(), id: \.self) { fontName in
                             Button(action: {
                                 UIPasteboard.general.string = fontName

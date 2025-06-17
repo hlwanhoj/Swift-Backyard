@@ -12,6 +12,7 @@ struct CustomLayout01View: View {
     var body: some View {
         VStack {
             Text("A layout which items will snap to the left edge of the collection view, and the snapped item will be expanded to reveal its content.")
+                .themeFont(.body)
                 .padding(13)
             CL01ViewControllerRepresentable()
         }

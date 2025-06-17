@@ -88,9 +88,7 @@ private struct SwiftUIFontTextStyleView: View {
                 Text("N/A")
             }
             Spacer()
-            Text("SwiftUI")
-                .font(.caption2)
-                .foregroundStyle(Color(hue: 0, saturation: 0, brightness: 0.7))
+            TrailingText(title: "SwiftUI")
         }
     }
 }
@@ -109,16 +107,14 @@ private struct UIKitFontTextStyleView: View {
                 VStack(alignment: .leading) {
                     Text(textStyle.name).font(Font(font))
                     Text(fontInfo.joined(separator: "\n"))
-                        .font(.footnote)
+                        .themeFont(.footnote)
                         .foregroundStyle(Color.secondary)
                 }
             } else {
                 Text("N/A")
             }
             Spacer()
-            Text("UIKit")
-                .font(.caption2)
-                .foregroundStyle(Color(hue: 0, saturation: 0, brightness: 0.7))
+            TrailingText(title: "UIKit")
         }
     }
 }
@@ -126,5 +122,15 @@ private struct UIKitFontTextStyleView: View {
 #Preview {
     NavigationStack {
         SystemTextStylesView()
+    }
+}
+
+struct TrailingText: View {
+    let title: String
+    
+    var body: some View {
+        Text(title)
+            .themeFont(.caption2)
+            .foregroundStyle(Color(hue: 0, saturation: 0, brightness: 0.7))
     }
 }
