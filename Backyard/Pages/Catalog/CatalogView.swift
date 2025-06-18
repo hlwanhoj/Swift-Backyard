@@ -12,6 +12,7 @@ struct CatalogView: View {
         CatalogSection(name: "System", children: [
             CatalogItem(name: "Installed Fonts", action: .goToSystemInstalledFontsPage),
             CatalogItem(name: "Text Styles", action: .goToSystemTextStylesPage),
+            CatalogItem(name: "Material", action: .goToSystemMaterialPage),
         ]),
         CatalogSection(name: "UICollectionViewLayout", children: [
             CatalogItem(name: "Custom Layout 1", action: .goToCustomLayout01Page),
@@ -37,6 +38,8 @@ struct CatalogView: View {
                     SystemInstalledFontsView()
                 case .goToSystemTextStylesPage:
                     SystemTextStylesView()
+                case .goToSystemMaterialPage:
+                    SystemMaterialView()
                 case .goToCustomLayout01Page:
                     CustomLayout01View()
                 }

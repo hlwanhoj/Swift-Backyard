@@ -24,6 +24,7 @@
 				Pages/Catalog/CatalogItem.swift,
 				Pages/Catalog/CatalogView.swift,
 				Pages/System/SystemInstalledFontsView.swift,
+				Pages/System/SystemMaterialView.swift,
 				Pages/System/SystemTextStylesView.swift,
 				"Pages/UICollectionViewLayout/Custom Layout 1/CL01.swift",
 				"Pages/UICollectionViewLayout/Custom Layout 1/CL01Attributes.swift",
@@ -34,6 +35,7 @@
 				TestView.swift,
 				Util/CGRectExt.swift,
 				Util/CollectionExt.swift,
+				Util/ColorExt.swift,
 				Util/Modifiers/AlertToastModifier.swift,
 				Util/Theme.swift,
 			);

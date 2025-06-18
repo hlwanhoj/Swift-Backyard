@@ -76,8 +76,8 @@ struct Theme {
     
 }
 
-extension Text {
-    public func themeFont(_ style: Font.TextStyle) -> Text {
+extension View {
+    public func themeFont(_ style: Font.TextStyle) -> some View {
         return self.font(Theme.current.font(for: style))
     }
 }
